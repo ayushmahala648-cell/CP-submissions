@@ -2,7 +2,8 @@
 #include <string>
 #include <vector>
 using namespace std;
-//pangram
+//pangram 
+//the code is wrong
 string lowercase(string s , int n){
     string t;
 
