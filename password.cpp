@@ -5,10 +5,7 @@
 using namespace std;
 
 int main(){
-    string numbers = "0123456789";
-    string lower_case = "abcdefghijklmnopqrstuvwxyz";
-    string upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string special_characters = "!@#$%^&*()-+";
+    
     
 
     string s;
