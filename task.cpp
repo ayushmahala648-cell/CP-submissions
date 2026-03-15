@@ -20,6 +20,7 @@ int main(){
     for(int i=0 ; i<n ; i++){
         cin >> vec[i].first >> vec[i].second;
     }
+    
 
     
 

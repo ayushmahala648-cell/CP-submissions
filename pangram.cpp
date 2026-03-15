@@ -3,39 +3,40 @@
 #include <vector>
 using namespace std;
 //pangram 
-//the code is wrong
-string lowercase(string s , int n){
+
+string lower_case(string s){
     string t;
 
-    for(int i=0 ; i<n ; i++){
-            
-        for(int i = 0; i < s.size(); i++){
-            if(isalpha(s[i])){
-                t += tolower(s[i]);
-            }
-    }    
-        
-        
+    for(auto val : s){
+        if(isalpha(val)){
+            t+=tolower(val);
+        }
     }
+
+
     return t;
+
 }
 
 int main() {
     
     string s;
-    cin>>s;
-    int n=s.size();
+    getline(cin,s);
+    
 
-    s = lowercase(s,n);
-    cout<<"lower case string is : "<<s;
+    s = lower_case(s);
+    int n=s.size();
+    
+    
+    
     vector <int> freq(26,0);
-    for(int i=0 ; i<s.size() ; i++){
+    for(int i=0 ; i<n ; i++){
         freq[int(s[i])-97]++;
     }
+
     int cnt=0;
-    for(auto val : freq){
-        cout<<val<<" ";
-    }
+    
+
     for(int i=0 ; i<26 ; i++){
         if(freq[i] ==0){
             cout<<"not pangram"<<endl;
